@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7B874B291A4460260034FB9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B874B281A4460260034FB9A /* main.m */; };
-		7B874B2C1A4460260034FB9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B874B2B1A4460260034FB9A /* AppDelegate.m */; };
-		7B874B2F1A4460260034FB9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B874B2E1A4460260034FB9A /* ViewController.m */; };
-		7B874B321A4460260034FB9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B874B301A4460260034FB9A /* Main.storyboard */; };
 		7B874B341A4460260034FB9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B874B331A4460260034FB9A /* Images.xcassets */; };
 		7B874B371A4460260034FB9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B874B351A4460260034FB9A /* LaunchScreen.xib */; };
 		7B874B431A4460260034FB9A /* CircleMaskDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B874B421A4460260034FB9A /* CircleMaskDemoTests.m */; };
+		7B874B4F1A4460770034FB9A /* AKCircleMaskTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B874B4E1A4460770034FB9A /* AKCircleMaskTransitionController.m */; };
+		7B874B571A4463140034FB9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B874B541A4463140034FB9A /* AppDelegate.m */; };
+		7B874B581A4463140034FB9A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B874B561A4463140034FB9A /* FirstViewController.m */; };
+		7B874B5B1A44633A0034FB9A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B874B5A1A44633A0034FB9A /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +31,19 @@
 		7B874B231A4460260034FB9A /* CircleMaskDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleMaskDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B874B271A4460260034FB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B874B281A4460260034FB9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7B874B2A1A4460260034FB9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7B874B2B1A4460260034FB9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7B874B2D1A4460260034FB9A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7B874B2E1A4460260034FB9A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7B874B311A4460260034FB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B874B331A4460260034FB9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7B874B361A4460260034FB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7B874B3C1A4460260034FB9A /* CircleMaskDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleMaskDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B874B411A4460260034FB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B874B421A4460260034FB9A /* CircleMaskDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleMaskDemoTests.m; sourceTree = "<group>"; };
+		7B874B4D1A4460770034FB9A /* AKCircleMaskTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKCircleMaskTransitionController.h; sourceTree = "<group>"; };
+		7B874B4E1A4460770034FB9A /* AKCircleMaskTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKCircleMaskTransitionController.m; sourceTree = "<group>"; };
+		7B874B531A4463140034FB9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		7B874B541A4463140034FB9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		7B874B551A4463140034FB9A /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = Classes/FirstViewController.h; sourceTree = "<group>"; };
+		7B874B561A4463140034FB9A /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = Classes/FirstViewController.m; sourceTree = "<group>"; };
+		7B874B591A44633A0034FB9A /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = Classes/SecondViewController.h; sourceTree = "<group>"; };
+		7B874B5A1A44633A0034FB9A /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = Classes/SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +85,10 @@
 		7B874B251A4460260034FB9A /* CircleMaskDemo */ = {
 			isa = PBXGroup;
 			children = (
-				7B874B2A1A4460260034FB9A /* AppDelegate.h */,
-				7B874B2B1A4460260034FB9A /* AppDelegate.m */,
-				7B874B2D1A4460260034FB9A /* ViewController.h */,
-				7B874B2E1A4460260034FB9A /* ViewController.m */,
-				7B874B301A4460260034FB9A /* Main.storyboard */,
+				7B874B531A4463140034FB9A /* AppDelegate.h */,
+				7B874B541A4463140034FB9A /* AppDelegate.m */,
+				7B874B601A44645E0034FB9A /* ViewController */,
+				7B874B4C1A4460770034FB9A /* AKCircleMaskTransitionController */,
 				7B874B331A4460260034FB9A /* Images.xcassets */,
 				7B874B351A4460260034FB9A /* LaunchScreen.xib */,
 				7B874B261A4460260034FB9A /* Supporting Files */,
@@ -117,6 +120,27 @@
 				7B874B411A4460260034FB9A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B874B4C1A4460770034FB9A /* AKCircleMaskTransitionController */ = {
+			isa = PBXGroup;
+			children = (
+				7B874B4D1A4460770034FB9A /* AKCircleMaskTransitionController.h */,
+				7B874B4E1A4460770034FB9A /* AKCircleMaskTransitionController.m */,
+			);
+			name = AKCircleMaskTransitionController;
+			path = ../../AKCircleMaskTransitionController;
+			sourceTree = "<group>";
+		};
+		7B874B601A44645E0034FB9A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7B874B551A4463140034FB9A /* FirstViewController.h */,
+				7B874B561A4463140034FB9A /* FirstViewController.m */,
+				7B874B591A44633A0034FB9A /* SecondViewController.h */,
+				7B874B5A1A44633A0034FB9A /* SecondViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +223,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B874B321A4460260034FB9A /* Main.storyboard in Resources */,
 				7B874B371A4460260034FB9A /* LaunchScreen.xib in Resources */,
 				7B874B341A4460260034FB9A /* Images.xcassets in Resources */,
 			);
@@ -219,9 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B874B2F1A4460260034FB9A /* ViewController.m in Sources */,
-				7B874B2C1A4460260034FB9A /* AppDelegate.m in Sources */,
+				7B874B5B1A44633A0034FB9A /* SecondViewController.m in Sources */,
+				7B874B4F1A4460770034FB9A /* AKCircleMaskTransitionController.m in Sources */,
 				7B874B291A4460260034FB9A /* main.m in Sources */,
+				7B874B571A4463140034FB9A /* AppDelegate.m in Sources */,
+				7B874B581A4463140034FB9A /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +269,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7B874B301A4460260034FB9A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B874B311A4460260034FB9A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7B874B351A4460260034FB9A /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -414,6 +431,7 @@
 				7B874B481A4460260034FB9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B874B491A4460260034FB9A /* Build configuration list for PBXNativeTarget "CircleMaskDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +440,7 @@
 				7B874B4B1A4460260034FB9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
