@@ -17,7 +17,7 @@
 @property (readwrite, nonatomic, assign) NSTimeInterval duration;
 
 /*!
- * Center of the animated circle center.
+ * Center of the animated circle.
  */
 @property (readwrite, nonatomic, assign) CGPoint center;
 

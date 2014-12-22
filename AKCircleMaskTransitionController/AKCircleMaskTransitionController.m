@@ -50,7 +50,7 @@ typedef NS_ENUM(NSUInteger, AKTransitionStatus) {
     return self;
 }
 
-#pragma mark - Transition Show / Dimiss
+#pragma mark - Transition Show / Dismiss
 
 - (void)animateShowingTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     
@@ -58,10 +58,7 @@ typedef NS_ENUM(NSUInteger, AKTransitionStatus) {
     UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     UIView *containerView = transitionContext.containerView;
     
-    // Radius of the cricle.
     CGFloat radius = [self radiusWithPoint:self.center rect:containerView.frame];
-    
-    // Size Animation
     CGRect fromRect = CGRectMake(self.center.x, self.center.y, 0.0, 0.0);
     CGRect toRect = CGRectMake(self.center.x - radius, self.center.y - radius, radius * 2.0, radius * 2.0);
     
@@ -110,10 +107,7 @@ typedef NS_ENUM(NSUInteger, AKTransitionStatus) {
     UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIView *containerView = transitionContext.containerView;
     
-    // Radius of the cricle.
     CGFloat radius = [self radiusWithPoint:self.center rect:containerView.frame];
-    
-    // Size Animation
     CGRect fromRect = CGRectMake(self.center.x - radius, self.center.y - radius, radius * 2.0, radius * 2.0);
     CGRect toRect = CGRectMake(self.center.x, self.center.y, 0.0, 0.0);
     
