@@ -16,7 +16,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        view.backgroundColor = UIColor(red: 63.0/255.0, green: 81.0/255.0, blue: 181.0/255.0, alpha: 1.0)
+        view.backgroundColor = UIColor(red: 197.0/255.0, green: 202.0/255.0, blue: 233.0/255.0, alpha: 1.0)
         button.autoresizingMask = (.FlexibleTopMargin | .FlexibleBottomMargin | .FlexibleLeftMargin | .FlexibleRightMargin)
         button.setTitle("Dismiss", forState: .Normal)
         button.addTarget(self, action: "didTapButton:", forControlEvents: .TouchUpInside)
