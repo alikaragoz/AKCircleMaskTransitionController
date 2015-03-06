@@ -7,54 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B874B291A4460260034FB9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B874B281A4460260034FB9A /* main.m */; };
-		7B874B341A4460260034FB9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B874B331A4460260034FB9A /* Images.xcassets */; };
-		7B874B371A4460260034FB9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B874B351A4460260034FB9A /* LaunchScreen.xib */; };
-		7B874B431A4460260034FB9A /* CircleMaskDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B874B421A4460260034FB9A /* CircleMaskDemoTests.m */; };
-		7B874B4F1A4460770034FB9A /* AKCircleMaskTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B874B4E1A4460770034FB9A /* AKCircleMaskTransitionController.m */; };
-		7B874B571A4463140034FB9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B874B541A4463140034FB9A /* AppDelegate.m */; };
-		7B874B581A4463140034FB9A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B874B561A4463140034FB9A /* FirstViewController.m */; };
-		7B874B5B1A44633A0034FB9A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B874B5A1A44633A0034FB9A /* SecondViewController.m */; };
+		A51D83371AA91C60003A9256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D83361AA91C60003A9256 /* AppDelegate.swift */; };
+		A51D83391AA91C60003A9256 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D83381AA91C60003A9256 /* FirstViewController.swift */; };
+		A51D833C1AA91C60003A9256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51D833A1AA91C60003A9256 /* Main.storyboard */; };
+		A51D833E1AA91C60003A9256 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51D833D1AA91C60003A9256 /* Images.xcassets */; };
+		A51D83411AA91C60003A9256 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A51D833F1AA91C60003A9256 /* LaunchScreen.xib */; };
+		A51D834D1AA91C60003A9256 /* CircleMaskDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D834C1AA91C60003A9256 /* CircleMaskDemoTests.swift */; };
+		A51D83571AA91C95003A9256 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D83561AA91C95003A9256 /* SecondViewController.swift */; };
+		A51D835C1AA937D7003A9256 /* AKCircleMaskTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D835B1AA937D7003A9256 /* AKCircleMaskTransitionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7B874B3D1A4460260034FB9A /* PBXContainerItemProxy */ = {
+		A51D83471AA91C60003A9256 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7B874B1B1A4460260034FB9A /* Project object */;
+			containerPortal = A51D83291AA91C60003A9256 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7B874B221A4460260034FB9A;
+			remoteGlobalIDString = A51D83301AA91C60003A9256;
 			remoteInfo = CircleMaskDemo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7B874B231A4460260034FB9A /* CircleMaskDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleMaskDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B874B271A4460260034FB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B874B281A4460260034FB9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7B874B331A4460260034FB9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7B874B361A4460260034FB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		7B874B3C1A4460260034FB9A /* CircleMaskDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleMaskDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B874B411A4460260034FB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B874B421A4460260034FB9A /* CircleMaskDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleMaskDemoTests.m; sourceTree = "<group>"; };
-		7B874B4D1A4460770034FB9A /* AKCircleMaskTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKCircleMaskTransitionController.h; sourceTree = "<group>"; };
-		7B874B4E1A4460770034FB9A /* AKCircleMaskTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKCircleMaskTransitionController.m; sourceTree = "<group>"; };
-		7B874B531A4463140034FB9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
-		7B874B541A4463140034FB9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		7B874B551A4463140034FB9A /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = Classes/FirstViewController.h; sourceTree = "<group>"; };
-		7B874B561A4463140034FB9A /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = Classes/FirstViewController.m; sourceTree = "<group>"; };
-		7B874B591A44633A0034FB9A /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = Classes/SecondViewController.h; sourceTree = "<group>"; };
-		7B874B5A1A44633A0034FB9A /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = Classes/SecondViewController.m; sourceTree = "<group>"; };
+		A51D83311AA91C60003A9256 /* CircleMaskDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleMaskDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51D83351AA91C60003A9256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A51D83361AA91C60003A9256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A51D83381AA91C60003A9256 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A51D833B1AA91C60003A9256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A51D833D1AA91C60003A9256 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A51D83401AA91C60003A9256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A51D83461AA91C60003A9256 /* CircleMaskDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleMaskDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51D834B1AA91C60003A9256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A51D834C1AA91C60003A9256 /* CircleMaskDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleMaskDemoTests.swift; sourceTree = "<group>"; };
+		A51D83561AA91C95003A9256 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A51D835B1AA937D7003A9256 /* AKCircleMaskTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AKCircleMaskTransitionController.swift; path = ../../AKCircleMaskTransitionController.swift; sourceTree = "<group>"; tabWidth = 5; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7B874B201A4460260034FB9A /* Frameworks */ = {
+		A51D832E1AA91C60003A9256 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B874B391A4460260034FB9A /* Frameworks */ = {
+		A51D83431AA91C60003A9256 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,95 +60,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7B874B1A1A4460260034FB9A = {
+		A51D83281AA91C60003A9256 = {
 			isa = PBXGroup;
 			children = (
-				7B874B251A4460260034FB9A /* CircleMaskDemo */,
-				7B874B3F1A4460260034FB9A /* CircleMaskDemoTests */,
-				7B874B241A4460260034FB9A /* Products */,
+				A51D83331AA91C60003A9256 /* CircleMaskDemo */,
+				A51D83491AA91C60003A9256 /* CircleMaskDemoTests */,
+				A51D83321AA91C60003A9256 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7B874B241A4460260034FB9A /* Products */ = {
+		A51D83321AA91C60003A9256 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B874B231A4460260034FB9A /* CircleMaskDemo.app */,
-				7B874B3C1A4460260034FB9A /* CircleMaskDemoTests.xctest */,
+				A51D83311AA91C60003A9256 /* CircleMaskDemo.app */,
+				A51D83461AA91C60003A9256 /* CircleMaskDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7B874B251A4460260034FB9A /* CircleMaskDemo */ = {
+		A51D83331AA91C60003A9256 /* CircleMaskDemo */ = {
 			isa = PBXGroup;
 			children = (
-				7B874B531A4463140034FB9A /* AppDelegate.h */,
-				7B874B541A4463140034FB9A /* AppDelegate.m */,
-				7B874B601A44645E0034FB9A /* ViewController */,
-				7B874B4C1A4460770034FB9A /* AKCircleMaskTransitionController */,
-				7B874B331A4460260034FB9A /* Images.xcassets */,
-				7B874B351A4460260034FB9A /* LaunchScreen.xib */,
-				7B874B261A4460260034FB9A /* Supporting Files */,
+				A51D83361AA91C60003A9256 /* AppDelegate.swift */,
+				A51D835A1AA93786003A9256 /* ViewController */,
+				A51D835B1AA937D7003A9256 /* AKCircleMaskTransitionController.swift */,
+				A51D833A1AA91C60003A9256 /* Main.storyboard */,
+				A51D833D1AA91C60003A9256 /* Images.xcassets */,
+				A51D833F1AA91C60003A9256 /* LaunchScreen.xib */,
+				A51D83341AA91C60003A9256 /* Supporting Files */,
 			);
 			path = CircleMaskDemo;
 			sourceTree = "<group>";
 		};
-		7B874B261A4460260034FB9A /* Supporting Files */ = {
+		A51D83341AA91C60003A9256 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B874B271A4460260034FB9A /* Info.plist */,
-				7B874B281A4460260034FB9A /* main.m */,
+				A51D83351AA91C60003A9256 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7B874B3F1A4460260034FB9A /* CircleMaskDemoTests */ = {
+		A51D83491AA91C60003A9256 /* CircleMaskDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				7B874B421A4460260034FB9A /* CircleMaskDemoTests.m */,
-				7B874B401A4460260034FB9A /* Supporting Files */,
+				A51D834C1AA91C60003A9256 /* CircleMaskDemoTests.swift */,
+				A51D834A1AA91C60003A9256 /* Supporting Files */,
 			);
 			path = CircleMaskDemoTests;
 			sourceTree = "<group>";
 		};
-		7B874B401A4460260034FB9A /* Supporting Files */ = {
+		A51D834A1AA91C60003A9256 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B874B411A4460260034FB9A /* Info.plist */,
+				A51D834B1AA91C60003A9256 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7B874B4C1A4460770034FB9A /* AKCircleMaskTransitionController */ = {
+		A51D835A1AA93786003A9256 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7B874B4D1A4460770034FB9A /* AKCircleMaskTransitionController.h */,
-				7B874B4E1A4460770034FB9A /* AKCircleMaskTransitionController.m */,
+				A51D83381AA91C60003A9256 /* FirstViewController.swift */,
+				A51D83561AA91C95003A9256 /* SecondViewController.swift */,
 			);
-			name = AKCircleMaskTransitionController;
-			path = ../../AKCircleMaskTransitionController;
-			sourceTree = "<group>";
-		};
-		7B874B601A44645E0034FB9A /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				7B874B551A4463140034FB9A /* FirstViewController.h */,
-				7B874B561A4463140034FB9A /* FirstViewController.m */,
-				7B874B591A44633A0034FB9A /* SecondViewController.h */,
-				7B874B5A1A44633A0034FB9A /* SecondViewController.m */,
-			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B874B221A4460260034FB9A /* CircleMaskDemo */ = {
+		A51D83301AA91C60003A9256 /* CircleMaskDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B874B461A4460260034FB9A /* Build configuration list for PBXNativeTarget "CircleMaskDemo" */;
+			buildConfigurationList = A51D83501AA91C60003A9256 /* Build configuration list for PBXNativeTarget "CircleMaskDemo" */;
 			buildPhases = (
-				7B874B1F1A4460260034FB9A /* Sources */,
-				7B874B201A4460260034FB9A /* Frameworks */,
-				7B874B211A4460260034FB9A /* Resources */,
+				A51D832D1AA91C60003A9256 /* Sources */,
+				A51D832E1AA91C60003A9256 /* Frameworks */,
+				A51D832F1AA91C60003A9256 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -160,46 +143,46 @@
 			);
 			name = CircleMaskDemo;
 			productName = CircleMaskDemo;
-			productReference = 7B874B231A4460260034FB9A /* CircleMaskDemo.app */;
+			productReference = A51D83311AA91C60003A9256 /* CircleMaskDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7B874B3B1A4460260034FB9A /* CircleMaskDemoTests */ = {
+		A51D83451AA91C60003A9256 /* CircleMaskDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B874B491A4460260034FB9A /* Build configuration list for PBXNativeTarget "CircleMaskDemoTests" */;
+			buildConfigurationList = A51D83531AA91C60003A9256 /* Build configuration list for PBXNativeTarget "CircleMaskDemoTests" */;
 			buildPhases = (
-				7B874B381A4460260034FB9A /* Sources */,
-				7B874B391A4460260034FB9A /* Frameworks */,
-				7B874B3A1A4460260034FB9A /* Resources */,
+				A51D83421AA91C60003A9256 /* Sources */,
+				A51D83431AA91C60003A9256 /* Frameworks */,
+				A51D83441AA91C60003A9256 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7B874B3E1A4460260034FB9A /* PBXTargetDependency */,
+				A51D83481AA91C60003A9256 /* PBXTargetDependency */,
 			);
 			name = CircleMaskDemoTests;
 			productName = CircleMaskDemoTests;
-			productReference = 7B874B3C1A4460260034FB9A /* CircleMaskDemoTests.xctest */;
+			productReference = A51D83461AA91C60003A9256 /* CircleMaskDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7B874B1B1A4460260034FB9A /* Project object */ = {
+		A51D83291AA91C60003A9256 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Ali Karagoz";
+				ORGANIZATIONNAME = "Douglas Bumby";
 				TargetAttributes = {
-					7B874B221A4460260034FB9A = {
+					A51D83301AA91C60003A9256 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					7B874B3B1A4460260034FB9A = {
+					A51D83451AA91C60003A9256 = {
 						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 7B874B221A4460260034FB9A;
+						TestTargetID = A51D83301AA91C60003A9256;
 					};
 				};
 			};
-			buildConfigurationList = 7B874B1E1A4460260034FB9A /* Build configuration list for PBXProject "CircleMaskDemo" */;
+			buildConfigurationList = A51D832C1AA91C60003A9256 /* Build configuration list for PBXProject "CircleMaskDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -207,28 +190,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 7B874B1A1A4460260034FB9A;
-			productRefGroup = 7B874B241A4460260034FB9A /* Products */;
+			mainGroup = A51D83281AA91C60003A9256;
+			productRefGroup = A51D83321AA91C60003A9256 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B874B221A4460260034FB9A /* CircleMaskDemo */,
-				7B874B3B1A4460260034FB9A /* CircleMaskDemoTests */,
+				A51D83301AA91C60003A9256 /* CircleMaskDemo */,
+				A51D83451AA91C60003A9256 /* CircleMaskDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7B874B211A4460260034FB9A /* Resources */ = {
+		A51D832F1AA91C60003A9256 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B874B371A4460260034FB9A /* LaunchScreen.xib in Resources */,
-				7B874B341A4460260034FB9A /* Images.xcassets in Resources */,
+				A51D833C1AA91C60003A9256 /* Main.storyboard in Resources */,
+				A51D83411AA91C60003A9256 /* LaunchScreen.xib in Resources */,
+				A51D833E1AA91C60003A9256 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B874B3A1A4460260034FB9A /* Resources */ = {
+		A51D83441AA91C60003A9256 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -238,49 +222,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7B874B1F1A4460260034FB9A /* Sources */ = {
+		A51D832D1AA91C60003A9256 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B874B5B1A44633A0034FB9A /* SecondViewController.m in Sources */,
-				7B874B4F1A4460770034FB9A /* AKCircleMaskTransitionController.m in Sources */,
-				7B874B291A4460260034FB9A /* main.m in Sources */,
-				7B874B571A4463140034FB9A /* AppDelegate.m in Sources */,
-				7B874B581A4463140034FB9A /* FirstViewController.m in Sources */,
+				A51D83571AA91C95003A9256 /* SecondViewController.swift in Sources */,
+				A51D83391AA91C60003A9256 /* FirstViewController.swift in Sources */,
+				A51D835C1AA937D7003A9256 /* AKCircleMaskTransitionController.swift in Sources */,
+				A51D83371AA91C60003A9256 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B874B381A4460260034FB9A /* Sources */ = {
+		A51D83421AA91C60003A9256 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B874B431A4460260034FB9A /* CircleMaskDemoTests.m in Sources */,
+				A51D834D1AA91C60003A9256 /* CircleMaskDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7B874B3E1A4460260034FB9A /* PBXTargetDependency */ = {
+		A51D83481AA91C60003A9256 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7B874B221A4460260034FB9A /* CircleMaskDemo */;
-			targetProxy = 7B874B3D1A4460260034FB9A /* PBXContainerItemProxy */;
+			target = A51D83301AA91C60003A9256 /* CircleMaskDemo */;
+			targetProxy = A51D83471AA91C60003A9256 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7B874B351A4460260034FB9A /* LaunchScreen.xib */ = {
+		A51D833A1AA91C60003A9256 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7B874B361A4460260034FB9A /* Base */,
+				A51D833B1AA91C60003A9256 /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		A51D833F1AA91C60003A9256 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51D83401AA91C60003A9256 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7B874B441A4460260034FB9A /* Debug */ = {
+		A51D834E1AA91C60003A9256 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -314,15 +307,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		7B874B451A4460260034FB9A /* Release */ = {
+		A51D834F1AA91C60003A9256 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -350,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,27 +352,27 @@
 			};
 			name = Release;
 		};
-		7B874B471A4460260034FB9A /* Debug */ = {
+		A51D83511AA91C60003A9256 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = CircleMaskDemo/Info.plist;
+				INFOPLIST_FILE = "CircleMaskDemo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		7B874B481A4460260034FB9A /* Release */ = {
+		A51D83521AA91C60003A9256 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = CircleMaskDemo/Info.plist;
+				INFOPLIST_FILE = "CircleMaskDemo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		7B874B4A1A4460260034FB9A /* Debug */ = {
+		A51D83541AA91C60003A9256 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -390,14 +384,14 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CircleMaskDemoTests/Info.plist;
+				INFOPLIST_FILE = "CircleMaskDemoTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircleMaskDemo.app/CircleMaskDemo";
 			};
 			name = Debug;
 		};
-		7B874B4B1A4460260034FB9A /* Release */ = {
+		A51D83551AA91C60003A9256 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -405,7 +399,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CircleMaskDemoTests/Info.plist;
+				INFOPLIST_FILE = "CircleMaskDemoTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircleMaskDemo.app/CircleMaskDemo";
@@ -415,34 +409,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B874B1E1A4460260034FB9A /* Build configuration list for PBXProject "CircleMaskDemo" */ = {
+		A51D832C1AA91C60003A9256 /* Build configuration list for PBXProject "CircleMaskDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B874B441A4460260034FB9A /* Debug */,
-				7B874B451A4460260034FB9A /* Release */,
+				A51D834E1AA91C60003A9256 /* Debug */,
+				A51D834F1AA91C60003A9256 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B874B461A4460260034FB9A /* Build configuration list for PBXNativeTarget "CircleMaskDemo" */ = {
+		A51D83501AA91C60003A9256 /* Build configuration list for PBXNativeTarget "CircleMaskDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B874B471A4460260034FB9A /* Debug */,
-				7B874B481A4460260034FB9A /* Release */,
+				A51D83511AA91C60003A9256 /* Debug */,
+				A51D83521AA91C60003A9256 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B874B491A4460260034FB9A /* Build configuration list for PBXNativeTarget "CircleMaskDemoTests" */ = {
+		A51D83531AA91C60003A9256 /* Build configuration list for PBXNativeTarget "CircleMaskDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B874B4A1A4460260034FB9A /* Debug */,
-				7B874B4B1A4460260034FB9A /* Release */,
+				A51D83541AA91C60003A9256 /* Debug */,
+				A51D83551AA91C60003A9256 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7B874B1B1A4460260034FB9A /* Project object */;
+	rootObject = A51D83291AA91C60003A9256 /* Project object */;
 }
