@@ -8,14 +8,13 @@
 import UIKit
 import Foundation
 
-class AKCircleMaskTransitionController: NSObject, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate  {
-   
+class AKCircleMaskTransitionController: NSObject, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate {
     // Duration of the animation in seconds
     // Default duration is 0.5
-    var duration: NSTimeInterval! = 0.5
+    let duration: NSTimeInterval = 0.5
     
     // Center of the animated circle
-    var center: CGPoint!
+    var center: CGPoint = CGPointZero
     
     enum AKTransitionStatus: UInt {
         case Show
@@ -23,7 +22,7 @@ class AKCircleMaskTransitionController: NSObject, UIViewControllerAnimatedTransi
     }
     
     var transitionStatus: AKTransitionStatus = AKTransitionStatus.Show
-    var maskingView: UIView?
+    var maskingView: UIView = UIView()
     
     // MARK: Transition Show / Dismiss
     func animateShowingTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -37,26 +36,26 @@ class AKCircleMaskTransitionController: NSObject, UIViewControllerAnimatedTransi
         let toRect = CGRect(x: center.x - radius, y: center.y - radius, width: radius * 2.0, height: radius * 2.0)
         
         // Masking View
-        maskingView?.layer.masksToBounds = true
-        maskingView?.frame = toRect
-        containerView.addSubview(maskingView!)
+        maskingView.layer.masksToBounds = true
+        maskingView.frame = toRect
+        containerView.addSubview(maskingView)
         
         // To View
         toViewController.view.frame = containerView.bounds
-        maskingView?.addSubview(toViewController.view)
+        maskingView.addSubview(toViewController.view)
         
         // Animation
         CATransaction.begin()
     
         let cornerAnimation = CABasicAnimation(keyPath: "cornerRadius")
-        cornerAnimation.fromValue = (0)
-        cornerAnimation.toValue = (radius)
-        maskingView?.layer.cornerRadius = radius
+        cornerAnimation.fromValue = NSNumber(integer: 0)
+        cornerAnimation.toValue = NSNumber(float: Float(radius))
+        maskingView.layer.cornerRadius = radius
         
         let sizeAnimation = CABasicAnimation(keyPath: "bounds")
         sizeAnimation.fromValue = NSValue(CGRect: fromRect)
         sizeAnimation.toValue = NSValue(CGRect: toRect)
-        maskingView?.layer.bounds = toRect
+        maskingView.layer.bounds = toRect
         
         let animationGroup = CAAnimationGroup()
         animationGroup.duration = duration
@@ -69,7 +68,7 @@ class AKCircleMaskTransitionController: NSObject, UIViewControllerAnimatedTransi
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
         }
         
-        maskingView?.layer.addAnimation(animationGroup, forKey: "animations")
+        maskingView.layer.addAnimation(animationGroup, forKey: "animations")
         CATransaction.commit()
     }
     
@@ -84,20 +83,20 @@ class AKCircleMaskTransitionController: NSObject, UIViewControllerAnimatedTransi
         let toRect = CGRect(x: center.x, y: center.y, width: 0.0, height: 0.0)
         
         // To View
-        maskingView?.addSubview(fromViewController.view)
+        maskingView.addSubview(fromViewController.view)
         
         // Animations
         CATransaction.begin()
         
         let cornerAnimation = CABasicAnimation(keyPath: "cornerRadius")
-        cornerAnimation.fromValue = (radius)
-        cornerAnimation.toValue = (0)
-        maskingView?.layer.cornerRadius = radius
+        cornerAnimation.fromValue = NSNumber(float: Float(radius))
+        cornerAnimation.toValue = NSNumber(integer: 0)
+        maskingView.layer.cornerRadius = radius
         
         let sizeAnimation = CABasicAnimation(keyPath: "bounds")
         sizeAnimation.fromValue = NSValue(CGRect: fromRect)
         sizeAnimation.toValue = NSValue(CGRect: toRect)
-        maskingView?.layer.bounds = toRect
+        maskingView.layer.bounds = toRect
         
         let animationGroup = CAAnimationGroup()
         animationGroup.duration = duration
@@ -109,7 +108,7 @@ class AKCircleMaskTransitionController: NSObject, UIViewControllerAnimatedTransi
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
         }
         
-        maskingView?.layer.addAnimation(animationGroup, forKey: "animations")
+        maskingView.layer.addAnimation(animationGroup, forKey: "animations")
         CATransaction.commit()
     }
     
@@ -150,7 +149,8 @@ class AKCircleMaskTransitionController: NSObject, UIViewControllerAnimatedTransi
     }
     
     // MARK: UIViewControllerTransitioningDelegate
-    func animationControllerForPresentedController(presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning {
+    
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transitionStatus = AKTransitionStatus.Show
         return self
     }
