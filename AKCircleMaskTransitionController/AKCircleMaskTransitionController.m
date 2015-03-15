@@ -173,7 +173,7 @@ typedef NS_ENUM(NSUInteger, AKTransitionStatus) {
 }
 
 - (CGFloat)hypotenuseWithDistX:(CGFloat)distX distY:(CGFloat)distY {
-    return sqrt(pow(distX, 2) + pow(distY, 2));
+    return sqrt(distX * distX + distY * distY);
 }
 
 #pragma mark - <UIViewControllerTransitioningDelegate>
