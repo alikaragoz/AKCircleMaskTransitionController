@@ -145,7 +145,7 @@ class AKCircleMaskTransitionController: NSObject, UIViewControllerAnimatedTransi
     }
     
     func hypotenuseWithDistX(distX: CGFloat, distY: CGFloat) -> CGFloat {
-        return sqrt(distX * distX) + (distY * distY)
+        return sqrt(distX * distX + distY * distY)
     }
     
     // MARK: UIViewControllerTransitioningDelegate
