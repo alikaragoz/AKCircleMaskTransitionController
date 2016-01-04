@@ -15,6 +15,7 @@
 		A51D834D1AA91C60003A9256 /* CircleMaskDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D834C1AA91C60003A9256 /* CircleMaskDemoTests.swift */; };
 		A51D83571AA91C95003A9256 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D83561AA91C95003A9256 /* SecondViewController.swift */; };
 		A51D835C1AA937D7003A9256 /* AKCircleMaskTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D835B1AA937D7003A9256 /* AKCircleMaskTransitionController.swift */; };
+		A52423AB1C3ADE5600449DE2 /* DemoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52423AA1C3ADE5600449DE2 /* DemoButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +31,17 @@
 /* Begin PBXFileReference section */
 		A51D83311AA91C60003A9256 /* CircleMaskDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleMaskDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51D83351AA91C60003A9256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A51D83361AA91C60003A9256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A51D83381AA91C60003A9256 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A51D83361AA91C60003A9256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		A51D83381AA91C60003A9256 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = ViewController/FirstViewController.swift; sourceTree = "<group>"; };
 		A51D833B1AA91C60003A9256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A51D833D1AA91C60003A9256 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A51D833D1AA91C60003A9256 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		A51D83401AA91C60003A9256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A51D83461AA91C60003A9256 /* CircleMaskDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleMaskDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51D834B1AA91C60003A9256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A51D834C1AA91C60003A9256 /* CircleMaskDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleMaskDemoTests.swift; sourceTree = "<group>"; };
-		A51D83561AA91C95003A9256 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		A51D835B1AA937D7003A9256 /* AKCircleMaskTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AKCircleMaskTransitionController.swift; path = ../../AKCircleMaskTransitionController.swift; sourceTree = "<group>"; tabWidth = 5; };
+		A51D83561AA91C95003A9256 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ViewController/SecondViewController.swift; sourceTree = "<group>"; };
+		A51D835B1AA937D7003A9256 /* AKCircleMaskTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AKCircleMaskTransitionController.swift; path = ../../../AKCircleMaskTransitionController.swift; sourceTree = "<group>"; tabWidth = 5; };
+		A52423AA1C3ADE5600449DE2 /* DemoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +83,10 @@
 		A51D83331AA91C60003A9256 /* CircleMaskDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A51D83361AA91C60003A9256 /* AppDelegate.swift */,
-				A51D835A1AA93786003A9256 /* ViewController */,
-				A51D835B1AA937D7003A9256 /* AKCircleMaskTransitionController.swift */,
-				A51D833A1AA91C60003A9256 /* Main.storyboard */,
-				A51D833D1AA91C60003A9256 /* Images.xcassets */,
-				A51D833F1AA91C60003A9256 /* LaunchScreen.xib */,
+				A51D835A1AA93786003A9256 /* AKCircleMaskTransitionController */,
+				A51D83381AA91C60003A9256 /* FirstViewController.swift */,
+				A51D83561AA91C95003A9256 /* SecondViewController.swift */,
+				A52423AA1C3ADE5600449DE2 /* DemoButton.swift */,
 				A51D83341AA91C60003A9256 /* Supporting Files */,
 			);
 			path = CircleMaskDemo;
@@ -95,6 +95,10 @@
 		A51D83341AA91C60003A9256 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A51D83361AA91C60003A9256 /* AppDelegate.swift */,
+				A51D833A1AA91C60003A9256 /* Main.storyboard */,
+				A51D833D1AA91C60003A9256 /* Images.xcassets */,
+				A51D833F1AA91C60003A9256 /* LaunchScreen.xib */,
 				A51D83351AA91C60003A9256 /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -117,12 +121,12 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A51D835A1AA93786003A9256 /* ViewController */ = {
+		A51D835A1AA93786003A9256 /* AKCircleMaskTransitionController */ = {
 			isa = PBXGroup;
 			children = (
-				A51D83381AA91C60003A9256 /* FirstViewController.swift */,
-				A51D83561AA91C95003A9256 /* SecondViewController.swift */,
+				A51D835B1AA937D7003A9256 /* AKCircleMaskTransitionController.swift */,
 			);
+			name = AKCircleMaskTransitionController;
 			path = ViewController;
 			sourceTree = "<group>";
 		};
@@ -170,6 +174,8 @@
 		A51D83291AA91C60003A9256 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Douglas Bumby";
 				TargetAttributes = {
@@ -228,6 +234,7 @@
 			files = (
 				A51D83571AA91C95003A9256 /* SecondViewController.swift in Sources */,
 				A51D83391AA91C60003A9256 /* FirstViewController.swift in Sources */,
+				A52423AB1C3ADE5600449DE2 /* DemoButton.swift in Sources */,
 				A51D835C1AA937D7003A9256 /* AKCircleMaskTransitionController.swift in Sources */,
 				A51D83371AA91C60003A9256 /* AppDelegate.swift in Sources */,
 			);
@@ -258,7 +265,7 @@
 				A51D833B1AA91C60003A9256 /* Base */,
 			);
 			name = Main.storyboard;
-			path = .;
+			path = ../.;
 			sourceTree = "<group>";
 		};
 		A51D833F1AA91C60003A9256 /* LaunchScreen.xib */ = {
@@ -267,7 +274,7 @@
 				A51D83401AA91C60003A9256 /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = .;
+			path = ../.;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

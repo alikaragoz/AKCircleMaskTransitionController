@@ -6,7 +6,11 @@
 //
 
 import UIKit
-import Foundation
+
+enum AKTransitionStatus: UInt {
+    case Show
+    case Dismiss
+}
 
 class AKCircleMaskTransitionController: NSObject, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate {
     // Duration of the animation in seconds
@@ -14,24 +18,19 @@ class AKCircleMaskTransitionController: NSObject, UIViewControllerAnimatedTransi
     let duration: NSTimeInterval = 0.5
     
     // Center of the animated circle
-    var center: CGPoint = CGPointZero
-    
-    enum AKTransitionStatus: UInt {
-        case Show
-        case Dismiss
-    }
-    
-    var transitionStatus: AKTransitionStatus = AKTransitionStatus.Show
-    var maskingView: UIView = UIView()
+    var center = CGPointZero
+
+    var transitionStatus: AKTransitionStatus = .Show
+    var maskingView = UIView()
     
     // MARK: Transition Show / Dismiss
     func animateShowingTransition(transitionContext: UIViewControllerContextTransitioning) {
         
         // Getting useful references.
         let toViewController: UIViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
-        let containerView = transitionContext.containerView()
+        guard let containerView = transitionContext.containerView() else { return }
         
-        let radius: CGFloat = radiusWithPoint(center, rect: containerView.frame)
+        let radius = radiusWithPoint(center, rect: containerView.frame)
         let fromRect = CGRect(x: center.x, y: center.y, width: 0.0, height: 0.0)
         let toRect = CGRect(x: center.x - radius, y: center.y - radius, width: radius * 2.0, height: radius * 2.0)
         
@@ -76,9 +75,9 @@ class AKCircleMaskTransitionController: NSObject, UIViewControllerAnimatedTransi
         
         // Getting useful references.
         let fromViewController: UIViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!
-        let containerView = transitionContext.containerView()
+        guard let containerView = transitionContext.containerView() else { return }
         
-        let radius: CGFloat = radiusWithPoint(center, rect: containerView.frame)
+        let radius = radiusWithPoint(center, rect: containerView.frame)
         let fromRect = CGRect(x: center.x - radius, y: center.y - radius, width: radius * 2.0, height: radius * 2.0)
         let toRect = CGRect(x: center.x, y: center.y, width: 0.0, height: 0.0)
         
@@ -149,31 +148,29 @@ class AKCircleMaskTransitionController: NSObject, UIViewControllerAnimatedTransi
     }
     
     // MARK: UIViewControllerTransitioningDelegate
-    
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        transitionStatus = AKTransitionStatus.Show
+        transitionStatus = .Show
+
         return self
     }
     
-    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning {
-        transitionStatus = AKTransitionStatus.Dismiss
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transitionStatus = .Dismiss
+
         return self
     }
     
     // MARK: UIViewControllerAnimatedTransitioning
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return duration
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
-        
         switch self.transitionStatus {
-        case AKTransitionStatus.Show:
+        case .Show:
             self.animateShowingTransition(transitionContext)
-        case AKTransitionStatus.Dismiss:
+        case .Dismiss:
             self.animateDismissingTransition(transitionContext)
-        default:
-            println("Default")
         }
     }
 }
