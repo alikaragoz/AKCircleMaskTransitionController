@@ -84,9 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				A51D835A1AA93786003A9256 /* AKCircleMaskTransitionController */,
-				A52423AA1C3ADE5600449DE2 /* DemoButton.swift */,
 				A51D83381AA91C60003A9256 /* FirstViewController.swift */,
 				A51D83561AA91C95003A9256 /* SecondViewController.swift */,
+				A52423AA1C3ADE5600449DE2 /* DemoButton.swift */,
 				A51D83341AA91C60003A9256 /* Supporting Files */,
 			);
 			path = CircleMaskDemo;

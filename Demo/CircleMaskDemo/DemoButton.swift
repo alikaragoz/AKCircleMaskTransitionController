@@ -3,7 +3,7 @@
 //  CircleMaskDemo
 //
 //  Created by Willow Bumby on 2016-01-04.
-//  Copyright © 2016 Douglas Bumby. All rights reserved.
+//  Copyright © 2016 Willow Bumby. All rights reserved.
 //
 
 import UIKit
