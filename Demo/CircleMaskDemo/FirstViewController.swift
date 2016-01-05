@@ -18,8 +18,11 @@ class FirstViewController: UIViewController {
 
         view.backgroundColor = UIColor(red: 63.0/255.0, green: 81.0/255.0, blue: 181.0/255.0, alpha: 1.0)
 
+        button.backgroundColor = UIColor(red: 197.0/255.0, green: 202.0/255.0, blue: 233.0/255.0, alpha: 1.0)
         button.addTarget(self, action: "didTapButton:", forControlEvents: .TouchUpInside)
         button.setTitle("Present View Controller", forState: .Normal)
+        button.setTitleColor(UIColor(red: 63.0/255.0, green: 81.0/255.0, blue: 181.0/255.0, alpha: 1.0), forState: .Normal)
+        button.setTitleColor(UIColor(red: 23.0/255.0, green: 41.0/255.0, blue: 141.0/255.0, alpha: 1.0), forState: .Highlighted)
         button.sizeToFit()
 
         button.frame = CGRect(x: 0.0, y: 0.0, width: CGRectGetWidth(button.bounds) + 20.0, height: CGRectGetHeight(button.bounds) + 10.0)
